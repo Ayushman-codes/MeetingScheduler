@@ -11,6 +11,8 @@ export default function MeetingRoom() {
   const { isRecording, startRecording, stopRecording } = useAudioRecorder();
   const [isUploading, setIsUploading] = useState(false);
 
+  
+
   const handleLeaveMeeting = async () => {
     if (isRecording) {
       setIsUploading(true);
