@@ -37,7 +37,7 @@ export default function App() {
           {/* Public Routes */}
           <Route path="/login" element={!session ? <Login /> : <Navigate to="/" />} />
           <Route path="/register" element={!session ? <Register /> : <Navigate to="/" />} />
-          
+
           {/* Protected Routes */}
           <Route path="/" element={session ? <Dashboard /> : <Navigate to="/login" />} />
           <Route path="/meeting/:roomId" element={session ? <MeetingRoom /> : <Navigate to="/login" />} />
