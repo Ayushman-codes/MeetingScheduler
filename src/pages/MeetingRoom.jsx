@@ -58,7 +58,7 @@ export default function MeetingRoom() {
   return (
     <div className="max-w-6xl mx-auto mt-8 px-4">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Room: {roomId}</h1>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-blue-400">Room: {roomId}</h1>
         <button 
           onClick={isRecording ? handleLeaveMeeting : startRecording}
           disabled={isUploading}
